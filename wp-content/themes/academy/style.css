@@ -4429,3 +4429,12 @@ ul.products li.product img {
 .row_slide{
 	max-width: 100%;
 }
+.mkdf-st-text{
+	font-size:20px;
+}
+.box-home{
+	padding: 10px 0 30px 0;
+}
+.intro-msthanh{
+	border-bottom: 1px solid red;
+}
