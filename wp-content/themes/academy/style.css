@@ -411,7 +411,7 @@ textarea {
 }
 
 .alignnone {
-    margin: 0.5em 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .alignright {
@@ -474,7 +474,7 @@ input[type="button"],
 
 .element-button.dark {
 	border-color:rgba(0,0,0,0.2);
-	background-color:#3d4e5b;
+	background-color:#3d4e5b !important;
 }
 
 .element-button.medium {
@@ -1478,8 +1478,8 @@ ul.success li {
 }
 
 .site-header {
-	padding:2em 0;
-	border:1px solid rgba(255,255,255,0.1);
+	padding:1em 0;
+	border-bottom:1px solid #c8d500;
 	border-right-width:0;
 	border-left-width:0;
 }
@@ -1523,14 +1523,14 @@ ul.success li {
 
 .header-navigation div > ul > li a {
 	display:block;	
-	color:#f0f0f0;
+	color:#333;
 	white-space:nowrap;
 }
 
 .header-navigation li.current-menu-item > a,
 .header-navigation li.hover > a,
 .header-navigation a:hover {
-	color:#fff;
+	color:#d85708;
 }
 
 .header-navigation div > ul > li > a {
@@ -1588,9 +1588,11 @@ ul.success li {
 	position:relative;
 	overflow:hidden;
 	border:1px solid #D4D4D4;
-	background:url(images/select_menu_arrows.png) right -2.7em no-repeat;
+	background:url(images/select_menu_arrows.png) right -2.7em no-repeat ;
 }
-
+.select-menu.select-element.redirect{
+	background-color: #8c7223 ;
+}
 .select-element span {
 	display:block;
 	padding:0.45em 31px 0.45em 9px;
@@ -1628,13 +1630,16 @@ ul.success li {
 .select-menu:hover span {
 	color:#fff;
 }
-
+.header-navigation.right{
+	font-size: inherit;
+	text-transform: uppercase;
+}
 /*-------------------------- Search Form -------------------------*/
 
 .search-form  {
 	margin:0.5em 0 0.5em 10px;
 	border:1px solid rgba(0,0,0,0.1);
-	background:#3d4e5b url(images/icons/search_icon.png) right 0.6em no-repeat;
+	background:#3d4e5b  url(images/icons/search_icon.png) right 0.6em no-repeat !important;
 }
 
 .search-form form {
@@ -1670,7 +1675,7 @@ ul.success li {
 	margin-bottom:1em;
 	padding:0 27px 0 9px;
 	border:1px solid rgba(0,0,0,0.1);
-	background:#3d4e5b url(images/icons/search_icon.png) right 0.6em no-repeat;
+	background:#8c7223 url(images/icons/search_icon.png) right 0.6em no-repeat !important;
 }
 
 .mobile-search-form input {
@@ -3978,6 +3983,7 @@ p + .quiz-listing {
 	.site-header .site-logo,
 	.site-footer .copyright,
 	.header-navigation {
+		padding-top: 10px;
 		float:none;
 		width:100%;
 	}
@@ -4004,9 +4010,7 @@ p + .quiz-listing {
 		margin-left:0;
 	}
 	
-	.parallax-slider {
-		padding-top:3em;
-	}
+
 	
 	.parallax-slider .column {
 		top:0!important;
@@ -4419,4 +4423,9 @@ ul.products li.product img {
 .ie .row,
 .ie .clearfix {
 	zoom:1;
+}
+
+/* Custom Css by Cao Bada */
+.row_slide{
+	max-width: 100%;
 }

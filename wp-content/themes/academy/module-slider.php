@@ -62,7 +62,7 @@ if($type=='boxed') {
 	<?php while($query->have_posts()) { ?>
 		<?php $query->the_post(); ?>
 		<li>
-			<div class="row"><?php the_content(); ?></div>
+			<div class="row_slide"><?php the_content(); ?></div>
 		</li>
 	<?php } ?>
 	</ul>

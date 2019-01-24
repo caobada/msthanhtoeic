@@ -18,14 +18,14 @@
 				<div class="row">
 					<div class="site-logo left">
 						<a href="<?php echo SITE_URL; ?>" rel="home">
-							<img src="<?php echo ThemexCore::getOption('site_logo', THEME_URI.'images/logo.png'); ?>" alt="<?php bloginfo('name'); ?>" />
+							<img width="180px" src="<?php echo ThemexCore::getOption('site_logo', THEME_URI.'images/logo.png'); ?>" alt="<?php bloginfo('name'); ?>" />
 						</a>
 					</div>
 					<!-- /logo -->
 					<div class="header-options right clearfix">					
-						<div class="login-options right">
+						<!-- <div class="login-options right"> -->
 						<?php if(is_user_logged_in()) { ?>
-							<div class="button-wrap left">
+							<!-- <div class="button-wrap left">
 								<a href="<?php echo wp_logout_url(SITE_URL); ?>" class="element-button dark">
 									<span class="button-icon logout"></span><?php _e('Sign Out','academy'); ?>
 								</a>							
@@ -34,9 +34,9 @@
 								<a href="<?php echo ThemexUser::$data['user']['profile_url']; ?>" class="element-button">
 									<span class="button-icon register"></span><?php _e('My Profile','academy'); ?>
 								</a>						
-							</div>							
+							</div>							 -->
 							<?php } else { ?>						
-							<div class="button-wrap left tooltip login-button">
+							<!-- <div class="button-wrap left tooltip login-button">
 								<a href="#" class="element-button dark"><span class="button-icon login"></span><?php _e('Sign In','academy'); ?></a>
 								<div class="tooltip-wrap">
 									<div class="tooltip-text">
@@ -86,16 +86,16 @@
 										</form>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<?php if(get_option('users_can_register')) { ?>
-							<div class="button-wrap left">
+							<!-- <div class="button-wrap left">
 								<a href="<?php echo ThemexCore::getURL('register'); ?>" class="element-button">
 									<span class="button-icon register"></span><?php _e('Register','academy'); ?>
 								</a>
-							</div>
+							</div> -->
 							<?php } ?>
 						<?php } ?>
-						</div>
+						<!-- </div> -->
 						<!-- /login options -->										
 						<div class="search-form right">
 							<?php get_search_form(); ?>

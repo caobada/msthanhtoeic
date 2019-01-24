@@ -1,0 +1,18 @@
+2019-01-24T04:29:08+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\Xampp7\htdocs\Msthanhtoeic\wp-admin\includes\post.php on line 20
+
+2019-01-24T06:38:02+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\functions.php on line 109
+
+2019-01-24T06:39:07+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\functions.php on line 109
+
+2019-01-24T06:39:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\functions.php on line 109
+
+2019-01-24T06:39:37+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\functions.php on line 109
+
+2019-01-24T06:39:52+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\functions.php on line 109
+
+2019-01-24T06:40:32+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\functions.php on line 109
+
+2019-01-24T07:05:04+00:00 CRITICAL syntax error, unexpected 'course' (T_STRING), expecting ',' or ';' in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\header.php on line 141
+
+2019-01-24T07:39:53+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\functions.php on line 109
+
