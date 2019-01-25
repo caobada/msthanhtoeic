@@ -111,8 +111,8 @@ a:hover {
     color:#5ea5d7;
 }
 
-::-moz-selection {  background-color: #f3715d; color: #fff; }
-::selection      {  background-color: #f3715d; color: #fff; }
+::-moz-selection {  background-color: #f3715d !important; color: #fff !important; }
+::selection      {  background-color: #f3715d !important; color: #fff !important; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color:#444;
@@ -2093,7 +2093,7 @@ ul.success li {
 }
 
 .single-course .featured-content {
-	padding:3em 0;
+	padding:1em 0;
 }
 
 .single-course .related-courses {
@@ -3177,7 +3177,7 @@ p + .quiz-listing {
 	border:1px solid rgba(0,0,0,0.01);
 	border-bottom-color:#3d4e5b;
 	background-color:#3d4e5b;
-	color:#fff;
+	color:#000;;
 	text-shadow:0 -1px 0 rgba(0,0,0,0.2);	
 }
 
@@ -4437,4 +4437,62 @@ ul.products li.product img {
 }
 .intro-msthanh{
 	border-bottom: 1px solid red;
+}
+.widget-img img{
+	width: 100%;
+}
+.into-detail p {
+	font-size: 16px;
+}
+.reason-choose{
+	padding: 30px 0 30px 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tags-source .tabs ul li{
+	font-size:16px;
+}
+.tags-source .tabs ul li:hover{
+	background: #ccbf62;
+}
+
+.tags-source .tabs ul li a{
+	color: #847b7b !important;
+	font-family: Merriweather,serif;
+	line-height: 36px;
+	font-weight: 700;
+}
+.tags-source .tabs .current{
+	border: 1px solid #e7cc0e !important;
+}
+.tags-source .panes .pane h1{
+	font-weight: 700;
+	line-height: 1.5em;
+	font-size: 20px;
+}
+.tags-source .panes .pane{
+	font-size: 18px;
+}
+
+.source-grid .nomargin{
+	text-align: center;
+	padding: 10px 0 20px 0;
+}
+.content-little{
+	padding: 5px 15px 20px 15px;
+	text-align: center;
+}
+.btn-info-more{
+	text-align: center;
+}
+.btn-info-more a{
+	color:white;
+	font-size: 15px;
+	font-weight: 700;
+}
+.btn-info-more .element-button{
+	padding: 10px 20px;
+}
+.btn-info-more:hover{
+	color:black !important;
 }

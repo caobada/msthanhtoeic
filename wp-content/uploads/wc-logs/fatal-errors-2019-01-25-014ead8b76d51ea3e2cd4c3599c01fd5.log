@@ -1,0 +1,36 @@
+2019-01-25T07:27:29+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\functions.php on line 109
+
+2019-01-25T08:33:23+00:00 CRITICAL Uncaught Error: Undefined class constant 'checkOption' in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\content-course-grid.php:18
+Stack trace:
+#0 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\template.php(690): require()
+#1 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\template.php(647): load_template('D:\\Xampp7\\htdoc...', false)
+#2 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\framework\shortcodes.php(216): get_template_part('content', 'course-grid')
+#4 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\shortcodes.php(319): themex_courses(Array, '', 'courses')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(one_th...', 'do_shortcode_ta...', '<div class="box...')
+#7 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\class-wp-hook.php(286): do_shortcode('<div class="box...')
+#8 D:\Xampp7\htdocs\Msthanhtoeic\w in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\content-course-grid.php on line 18
+
+2019-01-25T08:33:41+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function ThemexCore::checkOption(), 0 passed in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\content-course-grid.php on line 18 and exactly 1 expected in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\framework\classes\themex.core.php:896
+Stack trace:
+#0 D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\content-course-grid.php(18): ThemexCore::checkOption()
+#1 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\template.php(690): require('D:\\Xampp7\\htdoc...')
+#2 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\template.php(647): load_template('D:\\Xampp7\\htdoc...', false)
+#3 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\framework\shortcodes.php(216): get_template_part('content', 'course-grid')
+#5 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\shortcodes.php(319): themex_courses(Array, '', 'courses')
+#6 [internal function]: do_shortcode_t in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\framework\classes\themex.core.php on line 896
+
+2019-01-25T08:49:01+00:00 CRITICAL Uncaught Error: Access to undeclared static property: ThemexCourse::$certificate in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\content-course-grid.php:17
+Stack trace:
+#0 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\template.php(690): require()
+#1 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\template.php(647): load_template('D:\\Xampp7\\htdoc...', false)
+#2 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\framework\shortcodes.php(216): get_template_part('content', 'course-grid')
+#4 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\shortcodes.php(319): themex_courses(Array, '', 'courses')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(one_th...', 'do_shortcode_ta...', '<div class="box...')
+#7 D:\Xampp7\htdocs\Msthanhtoeic\wp-includes\class-wp-hook.php(286): do_shortcode('<div class="box...')
+#8 D:\Xa in D:\Xampp7\htdocs\Msthanhtoeic\wp-content\themes\academy\content-course-grid.php on line 17
+

@@ -82,7 +82,7 @@ jQuery(document).ready(function($) {
 			}
 		});
 	});
-
+ 
 	//Course Rating
 	$(themeElements.ratingForm).each(function() {
 		var rating=$(this).children('div'),
@@ -504,4 +504,8 @@ jQuery(document).ready(function($) {
 			$(this).css('text-indent', '-1em');
 		}
 	});
+
+	// Custom JS by Cao Bada
+
 });
+

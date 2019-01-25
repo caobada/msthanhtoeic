@@ -5,19 +5,11 @@
 	<?php } else { ?>
 	<div class="fullwidth-section">
 	<?php } ?>
-		<?php if(!empty(ThemexCourse::$data['lessons'])) { ?>
-		<h1><?php _e('Lessons', 'academy'); ?></h1>
-		<?php if(ThemexCourse::isMember()) { ?>
-		<div class="course-progress">
-			<span style="width:<?php echo ThemexCourse::$data['progress']; ?>%;"></span>
-		</div>
-		<?php } ?>
-		<div class="lessons-listing">
-			<?php foreach(ThemexCourse::$data['lessons'] as $index=>$lesson) { ?>
-			<?php get_template_part('content', 'lesson'); ?>
-			<?php } ?>
-		</div>
-		<?php } ?>
+	<!-- Content Source -->
+		<?php the_content(); ?>
+		<footer class="course-footer">
+				<?php get_template_part('module', 'form'); ?>
+		</footer>
 	</div>
 	<?php if(!empty(ThemexCourse::$data['questions'])) { ?>
 	<div class="course-questions fivecol column last">	
