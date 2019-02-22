@@ -83,7 +83,7 @@ body {
 	letter-spacing:0;
     font-weight:normal;
     font-style:normal;
-    font-size:13px;
+    font-size:15px;
     font-family:Open Sans, Helvetica, Arial, sans-serif;
     line-height:1.5;
 }
@@ -315,7 +315,7 @@ textarea {
 	display:block;
 	margin:0 0 1em 0;
 	padding:0.5em 9px;
-	width:auto;
+	width:90%;
 	outline:none;
 	border:1px solid #D4D4D4;
 	background:#fff;
@@ -426,10 +426,12 @@ textarea {
 
 .aligncenter {
     display: block;
-    margin: 0 auto 1em auto;
+    margin: 0 auto 0em auto;
 	text-align:center;
 }
-
+.slick-list .draggable{
+	height: 600px !important;
+}
 .aligncenter * {
 	text-align:center;
 }
@@ -1165,7 +1167,7 @@ ul.success li {
 	left:0;
 	z-index:1;
 	display:block;
-	background:url(images/bgs/substrate_bg.png);
+
 	content:" ";
 }
 
@@ -1351,7 +1353,7 @@ ul.success li {
 	display:block;
 	width:24px;
 	height:24px;
-	background:#5ea5d7 url(images/icons/toggle_icons.png) 7px 6px no-repeat;
+	background:#fbff00 url(images/icons/toggle_icons.png) 7px 6px no-repeat;
 	content:" ";
 }
 
@@ -1639,7 +1641,7 @@ ul.success li {
 .search-form  {
 	margin:0.5em 0 0.5em 10px;
 	border:1px solid rgba(0,0,0,0.1);
-	background:#3d4e5b  url(images/icons/search_icon.png) right 0.6em no-repeat !important;
+	background:#ffc510  url(images/icons/search_icon.png) right 0.6em no-repeat !important;
 }
 
 .search-form form {
@@ -1839,7 +1841,7 @@ ul.success li {
 .featured-content {
 	position:relative;
 	overflow:hidden;
-	background:url(images/bgs/site_bg.jpg);
+	background-color: #ffc510;
 }
 
 .featured-content:after {
@@ -1886,14 +1888,14 @@ ul.success li {
 
 /*--------------------------- Footer --------------------------*/
 
-.footer-wrap {
+.site-footer {
 	position:absolute;
 	right:0;
 	bottom:0;
 	left:0;
 	z-index:100;
 	width:100%;
-	background:#3d4e5b;
+	background:#3d4e5b !important;
 }
 
 .site-footer {
@@ -1981,7 +1983,7 @@ ul.success li {
 .course-preview .course-image img {
 	display:block;
 	width:100%;
-	height:auto;
+	height:300px;
 }
 
 .course-price {
@@ -2385,7 +2387,7 @@ ul.success li {
 	margin-right:10px;
 	width:24px;
 	height:24px;
-	background:#5ea5d7 url(images/icons/toggle_icons.png) 7px 6px no-repeat;
+	background:#fbff00 url(images/icons/toggle_icons.png) 7px 6px no-repeat;
 	cursor:pointer;
 }
 
@@ -3818,7 +3820,7 @@ p + .quiz-listing {
 .woocommerce-page input.button:hover,
 .woocommerce-page #respond input#submit:hover,
 .woocommerce-page #content input.button:hover {
-	background:#5ea5d7;
+	background:#fbff00;
 }
 
 .woocommerce a.button.alt,
@@ -4282,9 +4284,7 @@ ul.products li.product img,
 .user-courses-listing .course-meta,
 .plan-preview .plan-description,
 .course-preview .course-header {
-	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.1);
-	-moz-box-shadow:0 0 10px rgba(0,0,0,0.1);
-	box-shadow:0 0 10px rgba(0,0,0,0.1);
+
 }
 
 .search-form input {
@@ -4433,10 +4433,13 @@ ul.products li.product img {
 	font-size:20px;
 }
 .box-home{
+	margin-top: 20px;
 	padding: 10px 0 30px 0;
 }
 .intro-msthanh{
-	border-bottom: 1px solid red;
+	/* border-bottom: 1px solid red; */
+	background-color: #f9f9f9;
+	padding:10px 20px;
 }
 .widget-img img{
 	width: 100%;
@@ -4452,8 +4455,8 @@ ul.products li.product img {
 .tags-source .tabs ul li{
 	font-size:16px;
 }
-.tags-source .tabs ul li:hover{
-	background: #ccbf62;
+.tags-source .tabs ul li:hover a{
+	color: #e7cc0e !important;
 }
 
 .tags-source .tabs ul li a{
@@ -4463,7 +4466,7 @@ ul.products li.product img {
 	font-weight: 700;
 }
 .tags-source .tabs .current{
-	border: 1px solid #e7cc0e !important;
+	border-left: 6px solid #e7cc0e !important;
 }
 .tags-source .panes .pane h1{
 	font-weight: 700;
@@ -4476,7 +4479,7 @@ ul.products li.product img {
 
 .source-grid .nomargin{
 	text-align: center;
-	padding: 10px 0 20px 0;
+
 }
 .content-little{
 	padding: 5px 15px 20px 15px;
@@ -4495,4 +4498,68 @@ ul.products li.product img {
 }
 .btn-info-more:hover{
 	color:black !important;
+}
+.student{
+	width: 80%;
+	margin:auto;
+	padding: auto;
+	
+}
+.students{
+	background-color: #f9f9f9;
+}
+#slick-testimonials img{
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	margin: 5px;
+}
+#slick-testimonials .slick-slide p{
+	text-align: center;
+	padding: 0px 15px;
+}
+.titlea{
+	font-family: inherit;
+	font-size: 28px;
+	font-weight: 600;
+}
+.blocks-gallery-item img{
+	height: 500px;
+}
+.row .col4{
+	width: 30.75%;
+}
+@media only screen and (max-width: 576px) {
+	.row .col4 {
+		width: 80%;
+	}
+  }
+.col4{
+	float: left;
+	padding: 5px 10px;
+}
+.rcontent h2{
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.rcontent{
+	padding-top: 20px;
+	font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+	color:#fff;
+	background: #3d3d3d;
+}
+.wp-block-gallery li img{
+	height: 400px !important;
+}
+.site-footer{
+	background: #333 !important;
+}
+.center{
+	text-align: center;
+}
+.slick-initialized .slick-slide{
+	padding: 0px 10px;
 }

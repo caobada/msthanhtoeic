@@ -55,7 +55,7 @@ if($type=='boxed') {
 <div class="parallax-slider themex-slider">
 	<?php if($type=='parallax') { ?>
 	<div class="substrate">
-		<?php ThemexStyle::renderBackground(); ?>
+		<?php //ThemexStyle::renderBackground(); ?>
 	</div>
 	<?php } ?>
 	<ul>

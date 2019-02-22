@@ -447,7 +447,7 @@ function themex_testimonials($atts, $content=null) {
 		
 	$query=new WP_Query($args);
 	
-	$out='<div class="testimonials">';
+	// $out='<div class="testimonials">';
 	while($query->have_posts()){
 		$query->the_post();
 		
@@ -456,7 +456,7 @@ function themex_testimonials($atts, $content=null) {
 		$out.=ob_get_contents();
 		ob_end_clean();
 	}
-	$out.='</div>';
+	// $out.='</div>';
 	
 	wp_reset_query();
 	return $out;

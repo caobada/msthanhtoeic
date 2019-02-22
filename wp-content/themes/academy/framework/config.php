@@ -340,7 +340,7 @@ $config = array (
 			array (
 				'id' => 'course',
 				'labels' => array (
-					'name' => __('Courses', 'academy'),
+					'name' => __('Khóa học', 'academy'),
 					'singular_name' => __( 'Course', 'academy' ),
 					'add_new' => __('Add New', 'academy'),
 					'add_new_item' => __('Add New Course', 'academy'),
@@ -416,7 +416,7 @@ $config = array (
 			array (
 				'id' => 'testimonial',
 				'labels' => array (
-					'name' => __('Testimonials', 'academy'),
+					'name' => __('Học viên', 'academy'),
 					'singular_name' => __( 'Testimonial', 'academy' ),
 					'add_new' => __('Add New', 'academy'),
 					'add_new_item' => __('Add New Testimonial', 'academy'),
@@ -1365,7 +1365,7 @@ $config = array (
 				'attributes' => array(
 					array(
 						'name' => 'background-color',
-						'option' => 'secondary_color',
+						'option' => 'primary_color',
 					),
 				),
 			),

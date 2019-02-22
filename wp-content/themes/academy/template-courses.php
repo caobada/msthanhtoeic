@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Courses
+Template Name: Khóa học
 */
 
 get_header();

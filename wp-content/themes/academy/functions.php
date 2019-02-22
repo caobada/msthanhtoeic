@@ -212,3 +212,22 @@ include(THEMEX_PATH.'classes/themex.core.php');
 
 //Create theme instance
 $themex=new ThemexCore($config);
+?>
+
+<?php
+    function wp_include_js()
+    {
+        wp_enqueue_script('slick-js', get_template_directory_uri().'/js/slick.min.js', array(), false, true);
+    }
+
+    add_action('wp_enqueue_scripts', 'wp_include_js');
+
+    function wp_include_css()
+    {
+        wp_enqueue_style('slick', get_template_directory_uri().'/js/slick.css', array(), false, 'all');
+        wp_enqueue_style('slick-theme', get_template_directory_uri().'/js/slick-theme.css', array(), false, 'all');
+    }
+    
+    add_action('wp_enqueue_scripts', 'wp_include_css');
+
+?>
