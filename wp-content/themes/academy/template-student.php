@@ -39,7 +39,13 @@ if($layout=='left') {
 		}
         ?>
     </div>
+	<?php ThemexInterface::renderPagination(); ?>
 </div>
+<?php if($layout=='right') { ?>
+<aside class="sidebar column fourcol last">
+	<?php get_sidebar(); ?>
+</aside>
+<?php } ?>
 <?php 
 get_footer();
 ?>

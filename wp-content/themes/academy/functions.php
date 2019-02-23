@@ -218,6 +218,7 @@ $themex=new ThemexCore($config);
     function wp_include_js()
     {
         wp_enqueue_script('slick-js', get_template_directory_uri().'/js/slick.min.js', array(), false, true);
+        wp_enqueue_script('sticky-js', get_template_directory_uri().'/js/jquery.sticky.js', array(), false, true);
     }
 
     add_action('wp_enqueue_scripts', 'wp_include_js');

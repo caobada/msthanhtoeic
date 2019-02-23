@@ -547,6 +547,14 @@ jQuery(document).ready(function($) {
 		autoplay: true,
   		autoplaySpeed: 3000,
 	});
+
+
+    $(".header-wrap").sticky({
+		topSpacing:0,
+		zIndex: 100000000,
+		className: 'stikyed'
+	});
+
 	
 });
 

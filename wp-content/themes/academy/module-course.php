@@ -1,34 +1,21 @@
 <?php the_post(); ?>
 <?php ThemexCourse::refresh($post->ID, true); ?>
-<div class="threecol column">
-<?php //get_template_part('content', 'course-grid'); ?>
-</div>
 <?php if(ThemexCourse::hasMembers() || is_active_sidebar('course') || !empty(ThemexCourse::$data['sidebar'])) { ?>
-<div class="sixcol column">
+<div class="eightcol column">
 <?php } else { ?>
-<div class="sixcol column last">
+<div class="eightcol column">
 <?php } ?>
-	<div class="course-description widget <?php echo ThemexCourse::$data['status']; ?>-course">
-		<div class="widget-title">
-			<h4 class="nomargin"><?php // _e('Description', 'academy');
-				the_title();
-			?></h4>
-		</div>		
+	<div class="course-description widget <?php echo ThemexCourse::$data['status']; ?>-course">	
 		<div class="widget-img">
-			<?php 	the_post_thumbnail('normal'); ?>
+			<?php 	the_post_thumbnail(); ?>
 		</div>	
 	</div>
 </div>
-<?php if(ThemexCourse::hasMembers() || is_active_sidebar('course') || !empty(ThemexCourse::$data['sidebar'])) { ?>
-<aside class="sidebar threecol column last">
-	<?php
-	echo do_shortcode(themex_html(ThemexCourse::$data['sidebar']));
-	
-	if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('course'));
-	
-	if(ThemexCourse::hasMembers()) {
-		get_template_part('module', 'users');
-	}
-	?>
-</aside>
-<?php } ?>
+<div class="fourcol column last">
+	<div class="form-regis">
+		<label class="title-regis"><b>ĐĂNG KÍ KHÓA HỌC<b></label>
+		<div style="padding-top:25px">
+		<?php echo do_shortcode('[contact-form-7 id="3491" title="register header"]'); ?>
+		</div>
+	</div>
+</div>

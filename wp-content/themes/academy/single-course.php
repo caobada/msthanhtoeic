@@ -1,16 +1,34 @@
 <?php get_header(); ?>
 <div class="course-content clearfix popup-container">
-	<?php if(!empty(ThemexCourse::$data['questions'])) { ?>
-	<div class="sevencol column">
-	<?php } else { ?>
-	<div class="fullwidth-section">
-	<?php } ?>
-	<!-- Content Source -->
-		<?php the_content(); ?>
-		<footer class="course-footer">
+	<?php if(ThemexCourse::hasMembers() || is_active_sidebar('course') || !empty(ThemexCourse::$data['sidebar'])) { ?>
+	<aside class="sidebar threecol column info-sidebar">
+		<div class="title-calendar"><h2>Lịch khai giảng</h2></div>
+		<?php
+
+		$string = do_shortcode(themex_html(ThemexCourse::$data['sidebar']));
+		$content = explode('?',$string);
+		if(!empty($content)){
+			foreach($content as $val){
+				echo '<div class="antext">'.$val.'</div>';
+			}
+		}
+		if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('course'));
+		
+		?>
+			<footer class="course-footer">
 				<?php get_template_part('module', 'form'); ?>
-		</footer>
+			</footer>
+	</aside>
+	<?php } ?>
+
+	
+	<div class="sevencol column last">
+	<!-- Content Source -->
+		<?php the_content(); ?>		
 	</div>
+
+
+
 	<?php if(!empty(ThemexCourse::$data['questions'])) { ?>
 	<div class="course-questions fivecol column last">	
 		<h1><?php _e('Questions', 'academy'); ?></h1>
@@ -32,6 +50,12 @@
 	<!-- /popup -->
 	<?php } ?>
 </div>
+
+
+
+
+
+
 <!-- /course content -->
 <?php get_template_part('module', 'related'); ?>
 <?php get_footer(); ?>
