@@ -545,15 +545,56 @@ jQuery(document).ready(function($) {
 		slidesToScroll: 1,
 		adaptiveHeight: true,
 		autoplay: true,
-  		autoplaySpeed: 3000,
+		autoplaySpeed: 3000,
+		responsive: [
+			{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
+			  }
+			},
+			{
+			  breakpoint: 600,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		  ]
 	});
 
-
+	if($( window ).width() > 745){
     $(".header-wrap").sticky({
-		topSpacing:0,
-		zIndex: 100000000,
-		className: 'stikyed'
+			topSpacing:0,
+			zIndex: 100000000,
+			className: 'stikyed'
+		});
+	}
+	$(window).resize(function(){
+		if($(window).width() > 745){
+			$(".header-wrap").sticky({
+				topSpacing:0,
+				zIndex: 100000000,
+				className: 'stikyed'
+			});
+		}else{
+			$(".header-wrap").unstick();
+		}
 	});
+
 
 	
 });

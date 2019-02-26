@@ -72,6 +72,7 @@ class WP_Widget_Recent_Posts extends WP_Widget {
 			'no_found_rows'       => true,
 			'post_status'         => 'publish',
 			'ignore_sticky_posts' => true,
+			'cat'					=> 2
 		), $instance ) );
 
 		if ( ! $r->have_posts() ) {

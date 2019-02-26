@@ -79,12 +79,12 @@ Tags: learning, teaching, education, studying, tutoring
 body {
 	position:relative;
     background:#fff;
-    color:#444;
+	color:#444;
 	letter-spacing:0;
     font-weight:normal;
     font-style:normal;
     font-size:15px;
-    font-family:Open Sans, Helvetica, Arial, sans-serif;
+    font-family:inherit !important;
     line-height:1.5;
 }
 
@@ -3957,7 +3957,9 @@ p + .quiz-listing {
 		margin:0 0 3em 0;
 		width:100%;
 	}
-	
+	.wp-block-gallery li img{
+		height: 100 !important;
+	}
 	.row .column > .column {
 		margin-bottom:1em;
 	}
@@ -4069,7 +4071,9 @@ p + .quiz-listing {
 		padding:0 15px;
 		width:450px;
 	}
-	
+	.wp-block-gallery.is-cropped .blocks-gallery-item img{
+		height: 100% !important;
+	}
 	.featured-content .substrate {
 		width:500%;
 	}
@@ -4082,7 +4086,9 @@ p + .quiz-listing {
 		padding:0 15px;
 		width:290px;
 	}	
-	
+	.wp-block-gallery.is-cropped .blocks-gallery-item img{
+		height: 100% !important;
+	}
 	.featured-content .substrate {
 		width:700%;
 	}
@@ -4431,7 +4437,7 @@ ul.products li.product img {
 	max-width: 100%;
 }
 .mkdf-st-text{
-	font-size:20px;
+	font-size:22px;
 }
 .box-home{
 	margin-top: 20px;
@@ -4574,7 +4580,7 @@ ul.products li.product img {
 	padding: 20px 20px;
 	background-color: rgba(10,10,10, 0.5);
 	text-align: center;
-	margin-top:30%;
+	
 }
 .title-regis{
 	color: white;
@@ -4601,4 +4607,19 @@ ul.products li.product img {
 	font-size: 14px;
 	font-family: "Helvetica,Verdana,Arial,sans-serif";
 	padding:0px 0px 10px 0px;
+}
+.price-txt{
+	color: red;
+	font-size: 20px;
+}
+.phone-txt{
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.content-nomal{
+	padding: 10px 10px 10px 20px ;
+}
+.content-main{
+	padding: 30px 0;
 }

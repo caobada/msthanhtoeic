@@ -12,43 +12,36 @@
 				echo '<div class="antext">'.$val.'</div>';
 			}
 		}
-		if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('course'));
+		// if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('course'));
 		
 		?>
-			<footer class="course-footer">
+		<div class="title-price"><h2>Học phí</h2></div>
+		<div class="price-txt">
+		<?php 
+		echo number_format(ThemexCourse::$data['price']['number'], 0, ',', '.').' VNĐ';
+		?>
+		</div>
+
+		<div class="title-phone"><h2>Liên hệ</h2></div>
+		<div class="phone-txt">0912 863 219 (Ms.Thanh)  </div>
+
+			<footer class="course-footer" >
 				<?php get_template_part('module', 'form'); ?>
 			</footer>
 	</aside>
 	<?php } ?>
 
 	
-	<div class="sevencol column last">
+	<div class="sevencol column last content-nomal">
 	<!-- Content Source -->
-		<?php the_content(); ?>		
+		<?php the_excerpt(); ?>	
+	</div>
+	<div class="column content-main">
+	<?php the_content(); ?>	
 	</div>
 
 
 
-	<?php if(!empty(ThemexCourse::$data['questions'])) { ?>
-	<div class="course-questions fivecol column last">	
-		<h1><?php _e('Questions', 'academy'); ?></h1>
-		<ul class="styled-list style-2 bordered">
-		<?php foreach(ThemexCourse::$data['questions'] as $question) {?>
-		<li><a href="<?php echo get_comment_link($question->comment_ID); ?>"><?php echo get_comment_meta($question->comment_ID, 'title', true); ?></a></li>
-		<?php } ?>
-		</ul>	
-	</div>
-	<?php } ?>
-	<?php if((!ThemexCourse::isSubscriber() || !ThemexCourse::isMember()) && !ThemexCourse::isAuthor()) { ?>
-	<div class="popup hidden">
-		<?php if(!ThemexCourse::isSubscriber()) { ?>
-		<h2 class="popup-text"><?php _e('Subscribe to view this content', 'academy'); ?></h2>
-		<?php } else { ?>
-		<h2 class="popup-text"><?php _e('Take a course to view this content', 'academy'); ?></h2>
-		<?php } ?>
-	</div>
-	<!-- /popup -->
-	<?php } ?>
 </div>
 
 
@@ -58,4 +51,5 @@
 
 <!-- /course content -->
 <?php get_template_part('module', 'related'); ?>
+
 <?php get_footer(); ?>

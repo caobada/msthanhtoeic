@@ -34,13 +34,11 @@ if($layout=='left') {
 					<time class="post-date nomargin" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time(get_option('date_format')); ?></time>
 					<?php } ?>
 					<?php if(!ThemexCore::checkOption('post_author')) { ?>
-					<div class="post-author nomargin">&nbsp;<?php _e('by', 'academy'); ?> <?php the_author_posts_link(); ?>&nbsp;<?php _e('in', 'academy'); ?>&nbsp;</div>
+					<div class="post-author nomargin">&nbsp;<?php _e('bởi', 'academy'); ?> <?php the_author_posts_link(); ?>&nbsp;&nbsp;</div>
 					<?php } ?>
-					<div class="post-categories"><?php the_category(', '); ?></div>
+					
 				</div>
-				<div class="sixcol column last">
-					<div class="tagcloud"><?php the_tags('','',''); ?></div>
-				</div>				
+							
 			</footer>
 		</div>		
 	</article>

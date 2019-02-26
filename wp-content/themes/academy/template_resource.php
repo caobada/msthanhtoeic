@@ -1,10 +1,9 @@
+
 <?php
 /*
-Template Name: Posts
-*/
-
+ Template Name: Template Resource
+ */
 get_header();
-
 $layout=ThemexCore::getOption('posts_layout', 'right');
 if($layout=='left') {
 ?>
@@ -17,28 +16,29 @@ if($layout=='left') {
 <?php } else { ?>
 <div class="fullwidth-section">
 <?php } ?>
+
+
 	<?php echo themex_format(category_description()); ?>
 	<div class="clear"></div>
 	<div class="posts-listing">
-		<?php
+        <?php
+        
 		if(is_page()) {
 			query_posts(array(
 				'post_type' =>'post',
-				'paged' => themex_paged(),
+                'paged' => themex_paged(),
+                'cat' => 2
 			));
 		}
 		
 		if(have_posts()) {
 			while(have_posts()) {
 				the_post(); 
-				get_template_part('content', 'post');
+				get_template_part('content', 'resource');
 			} 
-		} else {
-		?>
-		<h3><?php _e('Không tìm thấy từ khóa?','academy'); ?></h3>
-		<p><?php _e('Xin lỗi! Không thấy từ khóa thích hợp trong tìm kiếm, vui lòng nhập lại.','academy'); ?></p>
-		<?php } ?>		
-	</div>
+		}
+        ?>
+    </div>
 	<?php ThemexInterface::renderPagination(); ?>
 </div>
 <?php if($layout=='right') { ?>
@@ -46,4 +46,6 @@ if($layout=='left') {
 	<?php get_sidebar(); ?>
 </aside>
 <?php } ?>
-<?php get_footer(); ?>
+<?php 
+get_footer();
+?>

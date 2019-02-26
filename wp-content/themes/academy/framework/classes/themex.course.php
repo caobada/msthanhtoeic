@@ -352,8 +352,39 @@ class ThemexCourse {
      * @access public	 
      * @return void
      */
+	public  static function queryCourses_tmp() {
+		global $wp_query;
+	
+		$args=array(
+			'post_type' => 'course',
+			'posts_per_page' => ThemexCore::getOption('courses_per_page', '3'),
+			'paged' => themex_paged(),
+			'meta_query' => array(
+				array(
+					'key' => '_thumbnail_id',
+				),
+			),
+		);
+		
+		if(get_query_var('course_category')) {
+			$args['tax_query'][]=array(
+				'taxonomy' => 'course_category',
+				'field' => 'slug',
+				'terms' => get_query_var('course_category'),				
+			);
+		}
+		
+		$order=ThemexCore::getOption('courses_order', 'date');
+		if(in_array($order, array('rating', 'popularity'))) {
+			$args['orderby']='meta_value_num';
+			$args['meta_key']='_course_'.$order;
+		}
+		
+		query_posts($args);
+	} 
+
 	public static function queryRelatedCourses() {
-		$limit=intval(ThemexCore::getOption('courses_related_number', '4'));
+		$limit=intval(ThemexCore::getOption('courses_related_number', '3'));
 		$order=ThemexCore::getOption('courses_related_order', 'category');
 				
 		$args=array(

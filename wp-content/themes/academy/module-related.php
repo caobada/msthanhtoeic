@@ -1,7 +1,7 @@
-<?php ThemexCourse::queryRelatedCourses(); ?>
+<?php ThemexCourse::queryCourses_tmp(); ?>
 <?php if(have_posts()) { ?>
 <div class="related-courses clearfix">
-<h1><?php _e('Related Courses', 'academy'); ?></h1>
+<h1><?php _e('Khóa học liên quan', 'academy'); ?></h1>
 	<div class="courses-listing clearfix">
 		<?php
 		$counter=0;	
@@ -9,7 +9,7 @@
 			the_post();
 			$counter++;
 			?>
-			<div class="column threecol <?php echo $counter==4 ? 'last':''; ?>">
+			<div class="column fourcol <?php echo $counter==3 ? 'last':''; ?>">
 			<?php get_template_part('content', 'course-grid'); ?>
 			</div>
 			<?php
