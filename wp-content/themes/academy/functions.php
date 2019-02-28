@@ -220,13 +220,13 @@ $themex=new ThemexCore($config);
         wp_enqueue_script('slick-js', get_template_directory_uri().'/js/slick.min.js', array(), false, true);
         wp_enqueue_script('sticky-js', get_template_directory_uri().'/js/jquery.sticky.js', array(), false, true);
     }
-
     add_action('wp_enqueue_scripts', 'wp_include_js');
 
     function wp_include_css()
     {
         wp_enqueue_style('slick', get_template_directory_uri().'/js/slick.css', array(), false, 'all');
         wp_enqueue_style('slick-theme', get_template_directory_uri().'/js/slick-theme.css', array(), false, 'all');
+        wp_enqueue_style('theme-aw', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), false, 'all');
     }
     
     add_action('wp_enqueue_scripts', 'wp_include_css');

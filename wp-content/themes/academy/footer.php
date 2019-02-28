@@ -22,10 +22,10 @@
 								<h2>Liên hệ MsThanhToeic</h2>
 								
 								<p>
-									<b>Phone:</b> 0912 863 219 (Ms.Thanh)
+									<b><i class="fa fa-phone"></i> Phone:</b> 0912 863 219 (Ms.Thanh)
 								</p>
 								<p>
-									<b>Địa chỉ:</b> 64/11/2 Nguyễn Khoái, P2, Q4 (Ngay dưới chân cầu Nguyễn Văn Cừ)
+									<b><i class="fa fa-building"></i> Địa chỉ:</b> 64/11/2 Nguyễn Khoái, P2, Q4 (Ngay dưới chân cầu Nguyễn Văn Cừ)
 								</p>
 								<p>
 								Lớp Toeic và Anh Văn Giao Tiếp của Ms.Thanh với những “độc quyền” chưa từng có trên thị trường, mang lại cho bạn kết quả khả quan, đúng như nguyện vọng. 
